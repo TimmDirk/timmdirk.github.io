@@ -42,6 +42,7 @@ img {
   height: 150px;
   line-height: 150px;
   position: sticky;
+  position: -webkit-sticky; /* Safari */
   top: 0;
 }
 
