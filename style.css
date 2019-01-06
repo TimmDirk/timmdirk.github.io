@@ -10,6 +10,10 @@ h1, h2, h3, h4 {
   color: #333;
 }
 
+h3 {
+  text-transform: uppercase;
+}
+
 p {
   line-height: 1,5;
 }
@@ -93,8 +97,25 @@ img {
   letter-spacing: 0.1em;
 }
 
+tr {
+  text-align: left;
+}
+
+th {
+  padding-bottom: 10px;
+}
+
+td, th{
+  padding-right: 40px;
+}
+
 .about {
   text-align: center;
+}
+
+.about img {
+  max-width: 500px;
+  max-height: 500px;
 }
 
 #footer {
