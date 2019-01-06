@@ -1,17 +1,6 @@
-@media only screen and (max-width: 768px) {
-  /* For mobile phones: */
-  .container {
-    max-width: 900px;
-  }
-
-  #header {
-    position: sticky;
-    top: 0;
-  }
-}
-
 @import url(http://fonts.googleapis.com/css?family=Montserrat:400,700);
 
+/* For mobile phones: */
 body {
   color: #555;
   margin: 0;
@@ -43,11 +32,19 @@ img {
   border-radius: 10%;
 }
 
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
 #header {
   background-color: #1abc9c;
   height: 150px;
   line-height: 150px;
+  position: sticky;
+  top: 0;
 }
+
 #header-title {
   display: block;
   float: left;
@@ -63,11 +60,6 @@ img {
 #header-nav li {
   display: inline;
   padding-left: 20px;
-}
-
-.container {
-  max-width: 1000px;
-  margin: 0 auto;
 }
 
 #header a {
@@ -149,4 +141,14 @@ td, th{
   min-width: 300px;
   display: inline-block;
   vertical-align: top;
+}
+
+/* For tablet & desktop */
+@media screen and (min-width: 600px) {
+  .container {
+    max-width: 1000px;
+  }
+  #header {
+    position: relative;
+  }
 }
