@@ -5,7 +5,7 @@ body {
   color: #555;
   margin: 0;
   font-family: Montserrat, sans-serif;
-  min-width: 540px;
+  max-width: 420px;
 }
 
 h1, h2, h3, h4 {
@@ -34,7 +34,7 @@ img {
 }
 
 .container {
-  max-width: 500px;
+  max-width: 340px;
   margin: 0 auto;
 }
 
