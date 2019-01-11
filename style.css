@@ -33,6 +33,39 @@ img {
   border-radius: 10%;
 }
 
+.hamburger {
+  display: inline-block;
+  cursor: pointer;
+  position: absolute;
+  right: 40px;
+  top: 30px;
+}
+
+.bar1, .bar2, .bar3 {
+  width: 35px;
+  height: 5px;
+  background-color: #333;
+  margin: 6px 0;
+  transition: 0.4s;
+}
+
+/* Rotate first bar */
+.change .bar1 {
+  -webkit-transform: rotate(-45deg) translate(-9px, 6px) ;
+  transform: rotate(-45deg) translate(-9px, 6px) ;
+}
+
+/* Fade out the second bar */
+.change .bar2 {
+  opacity: 0;
+}
+
+/* Rotate last bar */
+.change .bar3 {
+  -webkit-transform: rotate(45deg) translate(-8px, -8px) ;
+  transform: rotate(45deg) translate(-8px, -8px) ;
+}
+
 .container {
   margin: 0 auto;
   padding-left: 30px;
@@ -41,21 +74,22 @@ img {
 
 #header {
   background-color: #1abc9c;
-  height: 150px;
+  height: 100px;
   line-height: 150px;
   position: sticky;
   position: -webkit-sticky; /* Safari */
   top: 0;
+  background: rgba(0,0,0,0.1)
 }
 
 #header-title {
-  display: block;
+  display: none;
   float: left;
   font-size: 20px;
   font-weight: bold;
 }
 #header-nav {
-  display: block;
+  display: none;
   float: right;
   margin-top: 0;
 }
@@ -156,5 +190,16 @@ td, th{
   }
   #header {
     position: relative;
+    height: 150px;
+    background-color: #1abc9c;
+  }
+  #header-title {
+    display: block;
+  }
+  #header-nav {
+    display: block;
+  }
+  .hamburger {
+    display: none;
   }
 }

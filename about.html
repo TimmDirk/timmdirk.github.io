@@ -7,7 +7,17 @@
    <meta name="viewport" content="width=device-width, initial-scale=1">
  </head>
  <body>
+   <script>
+    function myFunction(x) {
+      x.classList.toggle("change");
+    }
+    </script>
    <div id="header">
+    <div class="hamburger" onclick="myFunction(this)">
+     <div class="bar1"></div>
+     <div class="bar2"></div>
+     <div class="bar3"></div>
+    </div>
     <div class="container">
       <a id="header-title" href="index.html">Home</a>
       <ul id=header-nav>
