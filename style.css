@@ -66,6 +66,31 @@ img {
   transform: rotate(45deg) translate(-8px, -8px) ;
 }
 
+.nav-burger {
+  display: none;
+}
+
+.change .nav-burger {
+  display: flex;
+  background-color: #1abc9c;
+  line-height: 100%;
+  margin-top: 37px;
+  margin-right: -40px;
+  position: sticky;
+  position: -webkit-sticky; /* Safari */
+  top: 0;
+  background: rgba(0,0,0,0.1)
+}
+
+.change .nav-burger ul {
+  margin-right: 20px;
+}
+
+.change .nav-burger li {
+  margin-bottom: 20px;
+  list-style: none;
+}
+
 .container {
   margin: 0 auto;
   padding-left: 30px;
@@ -100,7 +125,7 @@ img {
 }
 
 #header a {
-  color: white;
+  color: black;
   text-decoration: none;
   text-transform: uppercase;
   letter-spacing: 0.1em;
@@ -197,6 +222,9 @@ td, th{
   }
   #header-nav {
     display: block;
+  }
+  #header a {
+    color: white;
   }
   .hamburger {
     display: none;
