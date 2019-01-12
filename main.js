@@ -1,4 +1,5 @@
+// Switch/ Transiton on burger click
 
-function myFunction(x) {
- x.classList.toggle("change");
+function onBurgerClick(element) {
+ element.classList.toggle("change");
 }
