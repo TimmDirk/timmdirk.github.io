@@ -33,6 +33,25 @@ img {
   border-radius: 10%;
 }
 
+.container {
+  margin: 0 auto;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+#header {
+  background-color: #1abc9c;
+  height: 100px;
+  position: sticky;
+  position: -webkit-sticky; /* Safari */
+  top: 0;
+  background: rgba(0,0,0,0.1);
+}
+
+#header.expand {
+  height: auto;
+}
+
 .hamburger {
   display: inline-block;
   cursor: pointer;
@@ -68,25 +87,6 @@ img {
 
 .nav-burger {
   display: none;
-}
-
-.container {
-  margin: 0 auto;
-  padding-left: 30px;
-  padding-right: 30px;
-}
-
-#header {
-  background-color: #1abc9c;
-  height: 100px;
-  position: sticky;
-  position: -webkit-sticky; /* Safari */
-  top: 0;
-  background: rgba(0,0,0,0.1)
-}
-
-#header.expand {
-  height: auto;
 }
 
 .nav-list li {
